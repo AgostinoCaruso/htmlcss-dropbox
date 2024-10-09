@@ -176,7 +176,7 @@ body{
   .panel-img-col img{
     width: 100%;
   }
-  .panel-img-col{
-  }
-  .panel-text-col{
+  /* find-more */
+  .find-more{
+    width: 50%;
   }
