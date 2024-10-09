@@ -31,10 +31,13 @@ body{
     /* open-sans-FONT */
     font-family: "Open Sans", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 300;
+    font-weight: 500;
     font-style: normal;
     font-variation-settings:
       "wdth" 100;
+  }
+  html{
+    scroll-behavior: smooth;
   }
   img{
     display: block;
@@ -47,6 +50,7 @@ body{
   }
   a{
     text-decoration: none;
+    color: inherit;
   }
   .container-big{
     max-width: 1200px;
@@ -56,14 +60,26 @@ body{
     max-width: 1000px;
     margin:0 auto;
   }
+  /* background */
   .background-jumbo{
     background-color: var(--color-jumbo);
   }
+  /* border */
   .border-top{
       border-top: 1px solid var(--color-dark);
   }
   .border-bot{
       border-bottom: 1px solid var(--color-dark);
+  }
+  /* font */
+  .font-weight-light{
+    font-weight: 300;
+  }
+  .font-weight-normal{
+    font-weight: 500;
+  }
+  .font-weight-hard{
+    font-weight: 700;
   }
   /* padding */
   .little-padding{
@@ -74,6 +90,9 @@ body{
   }
   .harder-padding{
     padding: var(--harder-space);
+  }
+  .harder-padding-top-bot{
+    padding: var(--harder-space) 0px;
   }
   .little-margin-top{
     margin-top: var(--soft-space);
@@ -211,4 +230,27 @@ body{
   }
   .faq-arrow-padding{
     padding-right: var(--soft-space);
+  }
+  /* footer */
+  footer{
+    background-color: var(--color-dark);
+    color: var(--color-grey);
+  }
+  .footer-top{
+    padding: var(--harder-space) 0px;
+  }
+  .footer-top>ul>li:first-child{
+    font-size: 1.5em;
+    font-weight: 600;
+    padding-bottom: 10px;
+  }
+  .footer-top::after{
+    width: 50px;
+    border-bottom: 1px solid var(--color-grey);
+  }
+  .footer-bot{
+    padding: var(--harder-space) 0px;
+  }
+  .footer-bot::before{
+    border: 1px solid white;
   }
