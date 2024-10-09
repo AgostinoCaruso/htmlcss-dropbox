@@ -177,6 +177,14 @@ body{
     width: 100%;
   }
   /* find-more */
-  .find-more{
+  .w-width-50{
     width: 50%;
+  }
+  /* icon-box */
+  .icon-box-container >div{
+    width: calc(100% / 3);
+  }
+  .icon-box > div{
+    width: 50%;
+    height: calc(100vw / 6);
   }
