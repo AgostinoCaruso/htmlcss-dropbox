@@ -50,10 +50,24 @@ body{
     max-width: 1000px;
     margin:0 auto;
   }
+  /* padding */
   .little-padding{
     padding: var(--soft-space) var(--soft-space);
   }
-  /* flex-utility */
+  .little-padding-top{
+    margin-top: var(--soft-space);
+  }
+  .little-margin-bottom{
+    margin-bottom: var(--soft-space);
+  }
+  /* border */
+  .border-bottom{
+    border-bottom: 1px solid var(--color-dark);
+  }
+  .border{
+    border: 1px solid var(--color-dark);
+  } 
+/* flex-utility */
   .d-flex{
     display: flex;
   }
@@ -62,6 +76,12 @@ body{
   }
   .ali-cen{
     align-content: center;
+  }
+  .just-center{
+    justify-content: center;
+  }
+  .spa-bet{
+    justify-content: space-between;
   }
   .gap-soft{
     gap: var(--soft-space);
@@ -115,4 +135,7 @@ body{
     display: flex;
     justify-content: center;
     border-bottom: 1px solid var(--color-dark);
+  }
+  .box-enterprise-p{
+    width: 70%;
   }
