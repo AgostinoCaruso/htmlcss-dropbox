@@ -23,6 +23,7 @@
     --soft-space:20px;
     --softer-space:10px;
     --even-softer-space:5px;
+    --med-space:30px;
     --harder-space:50px;
   }
 /* general */
@@ -38,9 +39,9 @@ body{
   img{
     display: block;
   }
-  .debugger{
+  /* .debugger{
     border: 1px solid red;
-  }
+  } */
   ul{
     list-style: none;
   }
@@ -54,6 +55,15 @@ body{
   .container-small{
     max-width: 1000px;
     margin:0 auto;
+  }
+  .background-jumbo{
+    background-color: var(--color-jumbo);
+  }
+  .border-top{
+      border-top: 1px solid var(--color-dark);
+  }
+  .border-bot{
+      border-bottom: 1px solid var(--color-dark);
   }
   /* padding */
   .little-padding{
@@ -102,7 +112,7 @@ body{
     flex-flow: column nowrap;
   }
   .ali-cen{
-    align-content: center;
+    align-items: center;
   }
   .just-center{
     justify-content: center;
@@ -169,6 +179,10 @@ body{
   .box-enterprise-p{
     width: 70%;
   }
+  .line-b-p{
+    width: 20%;
+    border-top: 1px solid var(--color-dark);
+  }
   /* operation */
   .panel-col-6{
     width: calc(( 100% - 10px) / 3);
@@ -187,4 +201,14 @@ body{
   .icon-box > div{
     width: 50%;
     height: calc(100vw / 6);
+  }
+  .under-icon-box{
+    height: 250px;
+  }
+  /* faq */
+  .faq-row{
+    padding: var(--med-space) 0px;
+  }
+  .faq-arrow-padding{
+    padding-right: var(--soft-space);
   }
