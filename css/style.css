@@ -95,6 +95,9 @@ a {
 .color-blue{
     color: var(--color-blue);
 }
+.color-darkred{
+    color: var(--color-logo-second);
+}
 /* border */
 .border-top {
     border-top: 1px solid var(--color-dark);
@@ -189,8 +192,10 @@ a {
 }
 .btn-white{
     background-color: var(--color-white);
-    border: 1px solid var(--color-grey);
     color: var(--color-dark);
+}
+.btn-border-grey{
+    border: 1px solid var(--color-grey);
 }
 .text-underline{
     text-decoration: underline;
@@ -245,7 +250,10 @@ a {
 .gap-even-softer {
     gap: var(--even-softer-space);
 }
-
+/* space-delimited */
+.w-width-50{
+    width: 50%;
+}
 /* header */
 header {
     position: fixed;
@@ -349,8 +357,8 @@ header nav a{
 }
 
 /* find-more */
-.w-width-50 {
-    width: 50%;
+.w-width-findmore {
+    width: 70%;
 }
 
 /* icon-box */
@@ -365,22 +373,70 @@ header nav a{
     justify-content: center;
     align-items: center;
 }
-
 .icon{
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+#design-wipro-icon{
+    background-color: var(--color-logo-green);
+}
+#design-wipro-icon img{
+    width: 50%;
+}
+#asu{
+    background-color: var(--color-logo-second);
+}
+#asu img{
+    width: 50%;
+}
+#florida{
+    background-color: var(--color-logo-third);
+}
+#florida img{
+    width: 50%;
+}
+#topps{
+    background-color: var(--color-logo-light-red);
+}
+#topps img{
+    width: 50%;
+}
+#world-bicycle{
+    background-color: var(--color-logo-red);
+}
+#world-bicycle img{
+    width: 50%;
 }
 #hearst-icon{
     background-color: var(--color-light-blue);
 }
+#hearst-icon img{
+    width: 50%;
+}
+#lonely-planet{
+    background-color: var(--color-logo-blue);
+}
+#lonely-planet img{
+    width: 50%;
+}
+#clear-channel{
+    background-color: var(--color-logo-yellow);
+}
+#clear-channel img{
+    width: 50%;
+}
 
-.icon-box>div {
+.icon-box div {
     width: 50%;
     height: calc(100vw / 6);
 }
 
 .under-icon-box {
     height: 250px;
+}
+#btn-dropbox-business{
+    padding: 10px 45px;
 }
 
 /* faq */
