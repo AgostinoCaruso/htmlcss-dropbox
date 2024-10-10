@@ -14,7 +14,7 @@
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Dropbox</title>
 </head>
 
@@ -24,7 +24,7 @@
         <nav class="header-flex debugger">
             <ul class="debugger header-nav-flex">
                 <div>
-                    <img src="../img/logo-small.png" alt="">
+                    <img src="./img/logo-small.png" alt="">
                 </div>
                 <li><a href="#">Perché Dropbox</a></li>
                 <li><a href="#">Funzioni</a></li>
@@ -40,46 +40,52 @@
     </header>
     <main>
         <!-- jumbo -->
-        <div id="jumbo" class="debugger">
+        <div id="jumbo" class="debugger pad-section">
             <section class="container-big debugger">
                 <h1>
                     Tutto ciò che ti serve per il lavoro, in un unico posto
                 </h1>
-                <div class="d-flex debugger">
-                    <div class="panel-text-row debugger">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium impedit obcaecati
-                            facilis eius error soluta nemo beatae assumenda ipsa sit.</p>
-                        <span>btn</span>
+                <div class="panel-relative  d-flex debugger ">
+                    <div class="panel-text-row debugger d-flex col-flex gap-hard">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis alias, libero blanditiis
+                            eligendi corporis ipsam veritatis officia laudantium, et ut sunt laborum magni quam illo
+                            qui, incidunt nulla nihil molestias.
+                        </p>
+                        <a href="#"><span class="btn ">Inizia la tua prova gratuita</span></a>
                         <p>Annulla in qualsiasi momento</p>
+                        <span class="font-size-big font-weight-hard text-col-inherit"><a href="#business-plan"><i
+                                    class="fa-solid fa-arrow-down"></i></a></span>
                     </div>
                     <div class="panel-img-row debugger">
-                        <img src="../img/jumbo.png" alt="">
+                        <img src="./img/jumbo.png" alt="">
                     </div>
                 </div>
             </section>
         </div>
         <!-- business-plan -->
-        <div id="business-plan" class="debugger">
+        <div id="business-plan" class="debugger pad-section">
             <section class="har-mar-t-b container-small debugger">
-                <h1>Trova il piano business che fa per te</h1>
-                <div>
-                    <ul class="d-flex gap-soft debugger">
-                        <li class="debugger">Fatturazione mensile</li>
-                        <li class="debugger">Fatturazione annuale</li>
-                    </ul>
+                <h2 class="med-padding-t-b ">Trova il piano business che fa per te</h2>
+                <div class="d-flex gap-soft debugger med-padding-t-b ">
+                    <input type="radio" name="mensile" id="mensile" checked>
+                    <label for="mensile">Fatturazione mensile</label>
+                    <input type="radio" name="annuale" id="annuale">
+                    <label for="annuale">Fatturazione annuale</label>
                 </div>
                 <!-- container -->
-                <div class="container-panel d-flex gap-soft debugger little-margin-bottom">
+                <div class="container-panel d-flex gap-hard debugger little-margin-bottom med-padding-t-b ">
                     <!-- container-1 -->
                     <div class="little-panel debugger">
-                        <div class="top-panel-border debugger">
-                            Singolo
+                        <div class="top-panel-border debugger d-flex ali-cen gap-even-softer even-lit-padding-t-b">
+                            <i class="fa-solid fa-user"></i>Singolo
                         </div>
                         <div>
                             <ul class="d-flex col-flex gap-softer little-padding debugger">
-                                <li>Professional</li>
-                                <li>€ 12.00</li>
-                                <li>/mese</li>
+                                <li>
+                                    <h3 class="lit-padding-t-b">Professional</h3>
+                                </li>
+                                <li><span class="font-weight-hard">€ 12.00</span></li>
+                                <li><span class="font-weight-light">/mese</span></li>
                             </ul>
                             <ul class="d-flex col-flex gap-softer little-padding debugger">
                                 <li>1 utente</li>
@@ -87,10 +93,14 @@
                                 <li>Funzioni di produttività premium e condivisione file semplice e sicura</li>
                             </ul>
                             <div class="d-flex col-flex little-padding gap-soft debugger">
-                                <span>Prova gratis per 30 giorni</span>
-                                oppure acquista ora
+                                <span class="btn">Prova gratis per 30 giorni</span>
+                                <div class="d-flex gap-even-softer">
+                                    oppure <span class="a-text-und-blue"><a href="#">acquista ora</a></span>
+                                </div>
                             </div>
-                            <div class="line-b-p "></div>
+                            <div class="line-b-p li hr-space">
+                                <hr>
+                            </div>
                             <div class="little-padding debugger">
                                 <h4>Punti salienti del piano</h4>
                                 <ul class="d-flex col-flex little-padding gap-soft debugger">
@@ -166,20 +176,21 @@
                 </div>
                 <!-- box-enterprise -->
                 <div class="box-b-plan debugger border">
-                    <div class="d-flex just-center border-bottom debugger">
-                        team
+                    <div class="d-flex just-center border-bottom debugger ali-cen gap-even-softer even-lit-padding-t-b">
+                        <i class="fa-solid fa-building"></i>team
                     </div>
                     <div class="d-flex spa-bet debugger little-padding">
                         <section class="debugger d-flex col-flex gap-soft">
                             <h3>Enterprise</h3>
-                            Contatta l'ufficio vendite per i prezzi
+                            <span class="font-weight-hard">Contatta l'ufficio vendite per i prezzi</span>
                         </section>
                         <div class="debugger">
                             <span class="btn">Contatta l'ufficio vendite</span>
                         </div>
                     </div>
                     <div class="box-enterprise-p debugger little-padding">
-                        <p>Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione
+                        <p class="font-weight-light">Soluzioni personalizzate e supporto su misura per aiutare i
+                            professionisti IT nella gestione
                             su qualsiasi scala.
                         </p>
                     </div>
@@ -187,107 +198,113 @@
             </section>
         </div>
         <!-- contact -->
-        <div id="contact" class="debugger">
-            <div class="har-mar-t-b container-small d-flex debugger row-reverse">
-                <div class="panel-text-row debugger">
+        <div id="contact" class="debugger pad-section">
+            <div class="har-mar-t-b container-small d-flex debugger row-reverse gap-hard">
+                <div class="d-flex col-flex gap-soft panel-text-row debugger harder-padding-top-bot">
+                    <h3>Entra in contatto con un partner Dropbox</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium impedit obcaecati
                         facilis eius error soluta nemo beatae assumenda ipsa sit.</p>
-                    <span>btn</span>
-                    <p>Annulla in qualsiasi momento</p>
+                    <span class="btn btn-white d-flex ali-self-start">Trova un partner</span>
                 </div>
                 <div class="panel-img-row debugger">
-                    <img src="../img/jumbo.png" alt="">
+                    <img src="./img/partner.png" alt="">
                 </div>
             </div>
         </div>
         <!-- operation -->
-        <div id="operation" class="debugger">
+        <div id="operation" class="debugger pad-section">
             <section class="container-small har-mar-t-b debugger">
-                <h2>Esegui più operazioni con Dropbox Business</h2>
-                <div class="container-panel-6 d-flex row-wrap spa-bet gap-even-softer debugger">
+                <h2 class="hard-padding-b">Esegui più operazioni con Dropbox Business</h2>
+                <div class="container-panel-6 d-flex row-wrap spa-bet debugger gap-even-softer">
                     <!-- little-container-1 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-switching-tools.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                     <!-- little-container-2 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-send-files-it.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                     <!-- little-container-3 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-coordinate-it.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                     <!-- little-container-4 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-integrations-it.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                     <!-- little-container-5 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-multi-device.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                     <!-- little-container-6 -->
                     <div class="panel-col-6 debugger">
                         <div class="panel-img-col">
-                            <img src="../img/business-feature-coordinate-it.png" alt="">
+                            <img src="./img/business-feature-security.png" alt="">
                         </div>
                         <div class="panel-text-col debugger">
                             <h3>
                                 Passa di meno da uno strumento all'altro
                             </h3>
-                            <p class="little-padding-top">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
-                                modi.</p>
+                            <p class="little-padding-top">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Quidem consequuntur quia eaque? Neque doloremque totam hic nulla molestias adipisci eum
+                                sunt voluptatem, corrupti officia quia?</p>
                         </div>
                     </div>
                 </div>
             </section>
         </div>
         <!-- find-more -->
-        <section class="container-small debugger har-mar-t-b">
+        <section class="container-small debugger har-mar-t-b pad-section">
             <div class="w-width-50 debugger d-flex col-flex gap-soft">
                 <h2>Più di 500.000 team utilizzano Dropbox Business</h2>
                 <span class=""><a href="#">Scopri di più sui nostri clienti</a></span>
@@ -306,13 +323,13 @@
             </div>
             <div class="icon-box d-flex row-wrap debugger">
                 <div class="debugger">1</div>
-                <div class="debugger">2</div>
+                <div class="debugger icon" id="hearst-icon"><img src="./img/hearst_corp.svg" alt="logo hearst"></div>
                 <div class="debugger">3</div>
                 <div class="debugger">4</div>
             </div>
         </div>
         <!-- dropbox-business -->
-        <div class="background-jumbo">
+        <div class="background-jumbo pad-section">
             <div class=" under-icon-box container-small debugger d-flex spa-bet ali-cen">
                 <p class="w-width-50 debugger">Porta Dropbox Business nella tua azienda</p>
                 <div>
@@ -321,7 +338,7 @@
             </div>
         </div>
         <!-- faq -->
-        <section class="har-mar-t-b container-small debugger">
+        <section class="har-mar-t-b container-small debugger pad-section">
             <h2 class="faq-row border-bot">Domande frequenti</h2>
             <div class="faq-row border-bot d-flex spa-bet debugger">
                 <div>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced?
@@ -348,10 +365,10 @@
     </main>
     <footer>
         <!-- footer -->
-        <div class="harder-padding-top-bot">
-            <div class="container-big">
-                <div class="footer-top d-flex spa-bet">
-                    <ul class="d-flex col-flex gap-soft">
+        <div class="harder-padding-top-bot debugger">
+            <div class="container-big debugger">
+                <div class="footer-top d-flex spa-bet debugger">
+                    <ul class="d-flex col-flex gap-soft debugger">
                         <li><a href="#">Dropbox</a></li>
                         <li><a href="#">Applicazione desktop</a></li>
                         <li><a href="#">Perché Dropbox</a></li>
@@ -359,7 +376,7 @@
                         <li><a href="#">Sicurezza</a></li>
                         <li><a href="#">Funzioni</a></li>
                     </ul>
-                    <ul class="d-flex col-flex gap-soft">
+                    <ul class="d-flex col-flex gap-soft debugger">
                         <li><a href="#">Prodotti</a></li>
                         <li><a href="#">Applicazione desktop</a></li>
                         <li><a href="#">Perché Dropbox</a></li>
@@ -367,7 +384,7 @@
                         <li><a href="#">Sicurezza</a></li>
                         <li><a href="#">Funzioni</a></li>
                     </ul>
-                    <ul class="d-flex col-flex gap-soft">
+                    <ul class="d-flex col-flex gap-soft debugger">
                         <li><a href="#">Azienda</a></li>
                         <li><a href="#">Applicazione desktop</a></li>
                         <li><a href="#">Perché Dropbox</a></li>
@@ -375,7 +392,7 @@
                         <li><a href="#">Sicurezza</a></li>
                         <li><a href="#">Funzioni</a></li>
                     </ul>
-                    <ul class="d-flex col-flex gap-soft">
+                    <ul class="d-flex col-flex gap-soft debugger">
                         <li><a href="#">Supporto</a></li>
                         <li><a href="#">Applicazione desktop</a></li>
                         <li><a href="#">Perché Dropbox</a></li>
@@ -383,7 +400,7 @@
                         <li><a href="#">Sicurezza</a></li>
                         <li><a href="#">Funzioni</a></li>
                     </ul>
-                    <ul class="d-flex col-flex gap-soft">
+                    <ul class="d-flex col-flex gap-soft debugger">
                         <li><a href="#">Community</a></li>
                         <li><a href="#">Applicazione desktop</a></li>
                         <li><a href="#">Perché Dropbox</a></li>
@@ -392,8 +409,8 @@
                         <li><a href="#">Funzioni</a></li>
                     </ul>
                 </div>
-                <div class="footer-bot">
-                        <span class="font-weight-light">&hearts; italiano &downarrow;</span>
+                <div class="footer-bot debugger">
+                    <span class="font-weight-light debugger">&hearts; italiano &downarrow;</span>
                 </div>
             </div>
         </div>
