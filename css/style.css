@@ -76,7 +76,9 @@ a {
     text-decoration: none;
     /* color: inherit; */
 }
-
+a.btn:hover{
+    opacity: .8;
+}
 .text-col-inherit a {
     color: inherit;
 }
@@ -169,6 +171,9 @@ a {
 .even-lit-padding-t-b {
     padding: var(--even-softer-space) 0px;
 }
+.softer-padding-t-b {
+    padding: var(--softer-space) 0px;
+}
 
 .lit-padding-t-b {
     padding: var(--soft-space) 0px;
@@ -179,7 +184,7 @@ a {
 }
 
 .hr-space {
-    padding-left: var(--harder-space);
+    padding-left: var(--soft-space);
 }
 
 .harder-padding {
@@ -193,7 +198,9 @@ a {
 .pad-section {
     padding: var(--harder-space) 0px;
 }
-
+.pad-col-bus-plan{
+    padding-top: var(--med-space);
+}
 /* margin */
 .little-margin-top {
     margin-top: var(--soft-space);
@@ -219,7 +226,7 @@ a {
 /* button */
 .btn {
     background-color: var(--color-blue);
-    padding: 8px 15px;
+    padding: 8px 10px;
     color: var(--color-white);
     text-align: center;
 }
@@ -303,10 +310,9 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    /* padding: 28px 10px; */
     background-color: white;
     z-index: 1000;
-
+    box-shadow: 0px 1px;
 }
 
 header nav a {
@@ -315,8 +321,19 @@ header nav a {
     text-decoration: none;
     color: var(--color-dark);
 }
-
-/* header nav ul:first-child */
+header nav ul:first-child li:not(:first-child) a:hover,
+header nav ul:last-child li:not(:last-child) a:hover{
+    border-bottom: 2px solid var(--color-dark);    
+}
+.header-dropdown{
+    display: none;
+}
+.header nav ul:first-child li:nth-child(2) a:hover .header-dropdown{
+    display: block;
+}
+.show-dropdown:hover header-dropdown{
+    display: block;
+}
 .header-flex {
     display: flex;
     justify-content: space-between;
@@ -391,7 +408,7 @@ header nav a {
 }
 
 .line-b-p {
-    width: 100px;
+    width: 70px;
 }
 
 /* operation */
@@ -434,6 +451,8 @@ header nav a {
 .icon-center-box{
     padding: var(--harder-space) var(--harder-space);
     background-color: var(--color-grey-light);
+    height: calc(100vw / 3);
+    overflow-y: auto;
 }
 .img-icon-center{
     width: 50%;
