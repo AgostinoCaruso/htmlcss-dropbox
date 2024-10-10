@@ -343,6 +343,7 @@ header nav ul:last-child li:not(:last-child) a:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     gap: 35px;
 }
 
@@ -598,4 +599,10 @@ footer a {
 
 .footer-bot::before {
     border: 1px solid white;
+}
+footer ul li:first-child{
+    color: var(--color-white);
+}
+footer ul li:not(:first-child) a:hover{
+    color: var(--color-logo-second);
 }
